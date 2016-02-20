@@ -1,6 +1,6 @@
 Electrum-XVG - lightweight VERGE client for the XVG i2p electrum server
 ------------------------------------------------
-![Electrum-XVG](https://raw.githubusercontent.com/xvg/electrum-xvg-i2p/master/electrumlogo.png)
+![Electrum-XVG](https://raw.githubusercontent.com/vergecurrency/electrum-xvg-i2p/master/electrumlogo.png)
 
 Licence: GNU GPL v3
 
