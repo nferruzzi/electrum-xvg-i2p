@@ -1,6 +1,6 @@
-Electrum-DOGED - lightweight DogecoinDark client for the DOGED i2p electrum server
+Electrum-XVG - lightweight VERGE client for the XVG i2p electrum server
 ------------------------------------------------
-![Electrum-DOGED](https://raw.githubusercontent.com/doged/electrum-doged-i2p/master/electrumlogo.png)
+![Electrum-XVG](https://raw.githubusercontent.com/xvg/electrum-xvg-i2p/master/electrumlogo.png)
 
 Licence: GNU GPL v3
 
@@ -8,7 +8,7 @@ Authors: sunerok, bitspill & whit3water
 
 Language: Python
 
-Homepage: http://electrum-doged.space/
+Homepage: http://electrum-xvg.space/
 
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
@@ -29,7 +29,7 @@ sudo nano i2ptunnel.config
 
 * (now paste the following at the end of the file)
 
-tunnel.7.name=dogedsock9000
+tunnel.7.name=xvgsock9000
 
 tunnel.7.option.i2cp.closeIdleTime=1800000
 
@@ -65,7 +65,7 @@ tunnel.7.option.inbound.length=3
 
 tunnel.7.option.inbound.lengthVariance=0
 
-tunnel.7.option.inbound.nickname=doged
+tunnel.7.option.inbound.nickname=xvg
 
 tunnel.7.option.inbound.quantity=2
 
@@ -75,7 +75,7 @@ tunnel.7.option.outbound.length=3
 
 tunnel.7.option.outbound.lengthVariance=0
 
-tunnel.7.option.outbound.nickname=doged
+tunnel.7.option.outbound.nickname=xvg
 
 tunnel.7.option.outbound.quantity=2
 
@@ -103,7 +103,7 @@ sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes
 
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa slowaes
 
-git clone https://github.com/doged/electrum-doged-i2p && cd electrum-doged-i2p
+git clone https://github.com/xvg/electrum-xvg-i2p && cd electrum-xvg-i2p
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
@@ -111,12 +111,12 @@ sudo python setup.py install
 
 To run Electrum from this directory, just do:
 ---------------------------------------------
-  ./electrum-doged
+  ./electrum-xvg
 
 
 To update your copy of the electrum client:
 -------------------------------------------
-cd electrum-doged-i2p
+cd electrum-xvg-i2p
 
 git pull
 
@@ -126,7 +126,7 @@ sudo python setup.py install
 ------------------
 
 * download this repo as a zip and extract it to where you would like it to run from. 
-https://github.com/doged/electrum-doged-i2p/archive/master.zip
+https://github.com/xvg/electrum-xvg-i2p/archive/master.zip
 
 * download i2p for windows here: https://geti2p.net/en/download/0.9.20/clearnet/https/download.i2p2.de/i2pinstall_0.9.20_windows.exe/download
 
@@ -134,7 +134,7 @@ now go to C:\program files\i2p\ and edit i2ptunnel.config
 
 * add the following lines to the end of the file:
 
-tunnel.7.name=dogedsock9000
+tunnel.7.name=xvgsock9000
 
 tunnel.7.option.i2cp.closeIdleTime=1800000
 
@@ -170,7 +170,7 @@ tunnel.7.option.inbound.length=3
 
 tunnel.7.option.inbound.lengthVariance=0
 
-tunnel.7.option.inbound.nickname=doged
+tunnel.7.option.inbound.nickname=xvg
 
 tunnel.7.option.inbound.quantity=2
 
@@ -180,7 +180,7 @@ tunnel.7.option.outbound.length=3
 
 tunnel.7.option.outbound.lengthVariance=0
 
-tunnel.7.option.outbound.nickname=doged
+tunnel.7.option.outbound.nickname=xvg
 
 tunnel.7.option.outbound.quantity=2
 
@@ -208,7 +208,7 @@ tunnel.7.type=sockstunnel
 
 * then open start folder, type "cmd" and hit enter. 
  
-* then, in command prompt, go into the directory where you unzipped electrum-doged-i2p-master:
+* then, in command prompt, go into the directory where you unzipped electrum-xvg-i2p-master:
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
@@ -244,13 +244,13 @@ pip install slowaes
 
 python setup.py build
 
-Modify electrum-doged and change python2 to python in the first line
+Modify electrum-xvg and change python2 to python in the first line
 
 sudo python setup.py install
 
 then modify the i2ptunnel.config file in the i2p directory and add the following to the end of it:
 
-tunnel.7.name=dogedsock9000
+tunnel.7.name=xvgsock9000
 
 tunnel.7.option.i2cp.closeIdleTime=1800000
 
@@ -286,7 +286,7 @@ tunnel.7.option.inbound.length=3
 
 tunnel.7.option.inbound.lengthVariance=0
 
-tunnel.7.option.inbound.nickname=doged
+tunnel.7.option.inbound.nickname=xvg
 
 tunnel.7.option.inbound.quantity=2
 
@@ -296,7 +296,7 @@ tunnel.7.option.outbound.length=3
 
 tunnel.7.option.outbound.lengthVariance=0
 
-tunnel.7.option.outbound.nickname=doged
+tunnel.7.option.outbound.nickname=xvg
 
 tunnel.7.option.outbound.quantity=2
 
@@ -318,7 +318,7 @@ then restart i2p, and
 
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa slowaes requests
 
-python electrum-doged
+python electrum-xvg
 
 2. HOW OFFICIAL PACKAGES ARE CREATED
 ------------------------------------
@@ -339,8 +339,8 @@ On Mac OS X:
   
   ARCHFLAGS="-arch i386 -arch x86_64" sudo python setup-release.py py2app --includes sip
 
-  sudo hdiutil create -fs HFS+ -volname "Electrum-DOGED" -srcfolder dist/Electrum-DOGED.app dist/electrum-doged-VERSION-macosx.dmg
+  sudo hdiutil create -fs HFS+ -volname "Electrum-XVG" -srcfolder dist/Electrum-XVG.app dist/electrum-xvg-VERSION-macosx.dmg
 
 
 [![Visit our i2p IRC Chat!] 
-127.0.0.1 6668 #dogecoindark
+127.0.0.1 6668 #verge
