@@ -36,7 +36,7 @@ class Blockchain(util.DaemonThread):
         self.config = config
         self.network = network
         self.lock = threading.Lock()
-        self.headers_url = 'http://electrum-xvg.i2p/blockchain_headers'
+        self.headers_url = 'http://ozmzqvefh2tdppkxmnke4ahuqs55f4de24nnshoq73jd6zndb77a.b32.i2p/blockchain_headers'
         self.queue = Queue.Queue()
         self.local_height = 0
         self.set_local_height()
