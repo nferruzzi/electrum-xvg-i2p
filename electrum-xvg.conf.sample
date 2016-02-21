@@ -6,7 +6,7 @@
 # that can be rewritten by the client
 
 [client]
-server = urhypcy52ob5wkuqocfafxkxsawceiprwztvhxkksei665moxuea.b32.i2p:50001:t
+server = vr3whcqvovdpiofnol337mx2vsdpsw4gk42xz724wafqaiciwt3a.b32.i2p:50001:t
 proxy = 127.0.0.1:9000
 gap_limit = 5
 # booleans use python syntax

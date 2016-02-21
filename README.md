@@ -103,7 +103,7 @@ sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes
 
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa slowaes
 
-git clone https://github.com/xvg/electrum-xvg-i2p && cd electrum-xvg-i2p
+git clone https://github.com/vergecurrency/electrum-xvg-i2p && cd electrum-xvg-i2p
 
 pyrcc4 icons.qrc -o gui/qt/icons_rc.py
 
@@ -126,7 +126,7 @@ sudo python setup.py install
 ------------------
 
 * download this repo as a zip and extract it to where you would like it to run from. 
-https://github.com/xvg/electrum-xvg-i2p/archive/master.zip
+https://github.com/vergecurrency/electrum-xvg-i2p/archive/master.zip
 
 * download i2p for windows here: https://geti2p.net/en/download/0.9.20/clearnet/https/download.i2p2.de/i2pinstall_0.9.20_windows.exe/download
 
