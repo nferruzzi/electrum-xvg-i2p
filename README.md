@@ -21,11 +21,11 @@ sudo apt-get update
 
 sudo apt-get install i2p
 
-cd ~
+i2prouter start
 
-cd .i2p
+i2prouter stop
 
-sudo nano i2ptunnel.config
+sudo nano ~/.i2p/i2ptunnel.config
 
 * (now paste the following at the end of the file)
 
