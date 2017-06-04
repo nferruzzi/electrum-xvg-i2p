@@ -8,7 +8,7 @@ Authors: sunerok, bitspill & whit3water
 
 Language: Python
 
-Homepage: http://electrum-xvg.space/
+Vergecurrency.com
 
 
 1.a) GETTING STARTED WITH UBUNTU/LINUX
@@ -101,7 +101,7 @@ i2prouter restart
 
 sudo apt-get install git pyqt4-dev-tools python-pip python-dev python-slowaes
 
-sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa slowaes
+sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite scrypt qrcode ecdsa slowaes
 
 git clone https://github.com/vergecurrency/electrum-xvg-i2p && cd electrum-xvg-i2p
 
@@ -128,7 +128,7 @@ sudo python setup.py install
 * download this repo as a zip and extract it to where you would like it to run from. 
 https://github.com/vergecurrency/electrum-xvg-i2p/archive/master.zip
 
-* download i2p for windows here: https://geti2p.net/en/download/0.9.20/clearnet/https/download.i2p2.de/i2pinstall_0.9.20_windows.exe/download
+* download i2p for windows here: https://geti2p.net/en/download/0.9.30/clearnet/https/download.i2p2.de/i2pinstall_0.9.30_windows.exe/download
 
 now go to C:\program files\i2p\ and edit i2ptunnel.config
 
@@ -319,6 +319,8 @@ then restart i2p, and
 sudo pip install pyasn1 pyasn1-modules pbkdf2 tlslite qrcode ecdsa slowaes requests
 
 python electrum-xvg
+
+(mac osx i2p can be downloaded from: https://geti2p.net/en/download/0.9.30/clearnet/https/download.i2p2.de/i2pinstall_0.9.30.jar/download)
 
 2. HOW OFFICIAL PACKAGES ARE CREATED
 ------------------------------------
